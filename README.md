@@ -112,8 +112,7 @@ power-generation-dashboard/
 
 ## 作者
 
-**陈奕蓝**  
-2024 广卫·上进双创工作室  
+**sherry**   
 数据分析 / 数据运营方向
 
 ---
