@@ -1,0 +1,36 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Office temp
+~$*
+*.tmp
+
+# Logs
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local data / secrets
+.env
+.env.*
+data/raw/
+*.csv
+*.xlsx
+*.xls
+
+# Large BI files (use Git LFS if you need to version them)
+*.pbix
+*.twbx
+
+# Exceptions: keep small, published assets
+!data/README.md
+!data/source/*.xlsx
+!data/processed/*.csv
+!images/**/*.png
+!images/**/*.jpg
