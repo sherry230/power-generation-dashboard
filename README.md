@@ -3,7 +3,12 @@
 > 全国趋势、电源结构与北京市季节特征（2014—2023）  
 > 2024 广卫·上进双创工作室项目｜2026 作品集修订版
 
-[![FineBI](https://img.shields.io/badge/Tool-FineBI-4F6D84?style=flat-square)](https://www.finebi.com/) [![Report](https://img.shields.io/badge/Deliverable-PDF-708DA4?style=flat-square)](report/power-generation-analysis-report.pdf) [![Status](https://img.shields.io/badge/Status-Portfolio-9BB7A8?style=flat-square)](#)
+[![FineBI](https://img.shields.io/badge/Tool-FineBI-4F6D84?style=flat-square)](https://www.finebi.com/) [![Web Report](https://img.shields.io/badge/Web-Report-708DA4?style=flat-square)](https://sherry230.github.io/power-generation-dashboard/report/) [![Dashboard](https://img.shields.io/badge/Web-Dashboard-9BB7A8?style=flat-square)](https://sherry230.github.io/power-generation-dashboard/dashboard/)
+
+> **网页版优先**：  
+> [打开网页版分析报告](https://sherry230.github.io/power-generation-dashboard/report/) ｜ [查看在线仪表板](https://sherry230.github.io/power-generation-dashboard/dashboard/) ｜ [下载 PDF](https://sherry230.github.io/power-generation-dashboard/report/power-generation-analysis-report.pdf)
+>
+> GitHub 文件页不会内嵌 PDF；上述 Pages 链接可直接在浏览器中阅读或下载。
 
 ## 项目简介
 
@@ -29,12 +34,13 @@
 
 ## 交付物
 
-| 文件 | 说明 |
+| 交付物 | 说明 |
 |---|---|
-| [分析报告 PDF](report/power-generation-analysis-report.pdf) | 完整报告，含图表、口径、建议与附录 |
+| [网页版分析报告](https://sherry230.github.io/power-generation-dashboard/report/) | **推荐**，浏览器直接阅读，含图表与表格 |
+| [在线仪表板](https://sherry230.github.io/power-generation-dashboard/dashboard/) | 静态展示版，可直接查看完整仪表板 |
+| [分析报告 PDF](https://sherry230.github.io/power-generation-dashboard/report/power-generation-analysis-report.pdf) | 16 页，浏览器内打开或下载 |
 | [分析报告 DOCX](report/power-generation-analysis-report.docx) | 可编辑版本 |
 | [分析报告 Markdown](docs/analysis-report.md) | GitHub 在线阅读版本 |
-| [仪表板 PDF](dashboard/power-generation-dashboard.pdf) | FineBI 仪表板导出文件 |
 | [FineBI 实现说明](docs/finebi-implementation.md) | 数据接入、计算字段、图表与看板搭建步骤 |
 | [数据质量清单](docs/data-quality-checklist.md) | 单位、缺失值、零值、口径一致性检查 |
 | [修订说明](docs/revision-notes.md) | 初版到作品集版的改动与改写理由 |
@@ -44,8 +50,11 @@
 
 ```text
 power-generation-dashboard/
-├─ README.md
+├─ index.html                    # GitHub Pages 项目首页
+├─ assets/
+│  └─ site.css
 ├─ dashboard/
+│  ├─ index.html                 # 仪表板在线展示
 │  └─ power-generation-dashboard.pdf
 ├─ data/
 │  ├─ README.md                 # 来源、字段字典与已知问题
@@ -74,8 +83,11 @@ power-generation-dashboard/
 │  ├─ 08-dashboard-preview.jpg
 │  └─ supplementary/            # 初版补充图，未纳入主结论
 ├─ report/
+│  ├─ index.html                # 网页版报告
+│  ├─ report.css
 │  ├─ power-generation-analysis-report.docx
 │  └─ power-generation-analysis-report.pdf
+├─ .nojekyll
 └─ .gitignore
 ```
 

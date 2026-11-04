@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>基于 FineBI 的发电量可视化分析｜陈奕蓝</title>
+<meta name="description" content="基于 FineBI 的发电量可视化分析：全国趋势、电源结构、2023 Q4 前十省份与北京市季节特征。">
+<meta property="og:title" content="基于 FineBI 的发电量可视化分析">
+<meta property="og:description" content="全国趋势、电源结构与北京市季节特征（2014—2023）">
+<meta property="og:image" content="images/00-dashboard-overview.jpg">
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <div class="brand"><span>●</span>POWER GENERATION / BI</div>
+    <nav class="nav-links">
+      <a href="#overview">项目概览</a>
+      <a href="#findings">核心发现</a>
+      <a href="report/">网页版报告</a>
+      <a href="dashboard/">在线仪表板</a>
+      <a href="https://github.com/sherry230/power-generation-dashboard" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero" id="overview">
+    <div class="eyebrow">Data Analysis / FineBI Dashboard</div>
+    <h1>基于 FineBI 的<br>发电量可视化分析</h1>
+    <p class="sub">全国趋势、电源结构与北京市季节特征（2014—2023）。用一份可复核的分析报告，回答“总量怎么变、结构如何转、区域集中在哪里、北京为什么有双峰”。</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="report/">阅读网页版报告 →</a>
+      <a class="btn" href="dashboard/">查看完整仪表板</a>
+      <a class="btn" href="report/power-generation-analysis-report.pdf">下载 PDF</a>
+    </div>
+
+    <div class="metrics">
+      <div class="metric">
+        <div class="k">2023 全国发电量</div>
+        <div class="v">94,564.4<small>亿千瓦时</small></div>
+        <div class="d">同比 +6.9%</div>
+      </div>
+      <div class="metric">
+        <div class="k">火电占比</div>
+        <div class="v">66.3<small>%</small></div>
+        <div class="d">较 2014 年 −9.7pp</div>
+      </div>
+      <div class="metric">
+        <div class="k">其他电源占比</div>
+        <div class="v">20.1<small>%</small></div>
+        <div class="d">较 2014 年 +14.6pp</div>
+      </div>
+      <div class="metric">
+        <div class="k">2023 Q4 发电量</div>
+        <div class="v">22,642.8<small>亿千瓦时</small></div>
+        <div class="d">同比 +8.6%</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>仪表板总览</h2>
+      <span class="en">FineBI Dashboard / Static Export</span>
+    </div>
+    <div class="dashboard-frame">
+      <a href="dashboard/" aria-label="查看完整仪表板">
+        <img src="images/00-dashboard-overview.jpg" alt="基于 FineBI 的发电量分析仪表板">
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="findings">
+    <div class="section-head">
+      <h2>三个最值得讲的结论</h2>
+      <span class="en">Key Findings</span>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="num">01 / STRUCTURE</div>
+        <h3>火电仍是增量主体，但份额持续下降</h3>
+        <p>2014—2023 年火电增长 42.4%，占比却从 75.9% 降至 66.3%。总量扩张与结构清洁化同时发生，不能用“火电增长”直接推导出“结构更优”。</p>
+      </article>
+      <article class="card">
+        <div class="num">02 / REGION</div>
+        <h3>前十省份贡献 57.7%，资源与负荷并存</h3>
+        <p>广东、山东、江苏是负荷中心，内蒙古、新疆、四川、云南体现资源禀赋。区域格局不能只用人口密度或自然条件解释。</p>
+      </article>
+      <article class="card">
+        <div class="num">03 / Q4</div>
+        <h3>2023 Q4 头部集中度 58.8%</h3>
+        <p>31 省 Q4 合计 22,642.8 亿千瓦时，同比增长 8.6%；内蒙古、广东、江苏居前三，前十省份整体增长 9.5%。</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>交付物</h2>
+      <span class="en">Deliverables</span>
+    </div>
+    <div class="deliverables">
+      <div class="deliverable"><a href="report/">网页版分析报告</a><span>HTML · 适合直接阅读</span></div>
+      <div class="deliverable"><a href="report/power-generation-analysis-report.pdf">分析报告 PDF</a><span>16 页 · 可下载</span></div>
+      <div class="deliverable"><a href="dashboard/">发电量分析仪表板</a><span>静态展示 · 可下载 PDF</span></div>
+      <div class="deliverable"><a href="https://github.com/sherry230/power-generation-dashboard/blob/main/data/README.md" target="_blank" rel="noopener">数据说明 ↗</a><span>来源、字段与口径</span></div>
+      <div class="deliverable"><a href="https://github.com/sherry230/power-generation-dashboard/blob/main/docs/finebi-implementation.md" target="_blank" rel="noopener">FineBI 实现说明 ↗</a><span>复现步骤</span></div>
+      <div class="deliverable"><a href="https://github.com/sherry230/power-generation-dashboard" target="_blank" rel="noopener">GitHub 源码仓库 ↗</a><span>完整项目文件</span></div>
+    </div>
+    <div class="note" style="margin-top:18px;">
+      GitHub 文件页不会内嵌 PDF。本页提供可直接阅读的网页版报告；PDF 已通过 GitHub Pages 提供，可在浏览器中打开或下载。
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div>陈奕蓝｜2024 广卫·上进双创工作室｜数据分析 / 数据运营方向</div>
+    <div>数据来源：工作室提供 Excel（2024-11-04）</div>
+  </div>
+</footer>
+
+</body>
+</html>
