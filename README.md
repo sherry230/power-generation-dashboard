@@ -1,7 +1,7 @@
 # 基于 FineBI 的发电量可视化分析
 
 > 全国趋势、电源结构与北京市季节特征（2014—2023）  
-> 2024 广卫·上进双创工作室项目｜2026 作品集修订版
+> 2024 工作室项目｜2026 作品集修订版
 
 [![FineBI](https://img.shields.io/badge/Tool-FineBI-4F6D84?style=flat-square)](https://www.finebi.com/) [![Report](https://img.shields.io/badge/Deliverable-PDF-708DA4?style=flat-square)](report/power-generation-analysis-report.pdf) [![Status](https://img.shields.io/badge/Status-Portfolio-9BB7A8?style=flat-square)](#)
 
